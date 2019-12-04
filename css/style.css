@@ -1,0 +1,430 @@
+/* reset */
+html {
+  line-height: 1;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+a {
+  background-color: transparent;
+  color: inherit;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/* Add the correct display in IE 10-. */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "Faux Snow";
+  src: url("../assets/fonts/fauxsnow.ttf");
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+body {
+  background-color: #ebebeb;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.375;
+  padding: 0 0.25em;
+}
+
+h2, h3 {
+  font-size: 1.375em;
+  font-weight: 700;
+  margin: 0.75em 0 0.5em;
+}
+
+p {
+  line-height: 1.25;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.larger {
+  font-size: 1.1875em;
+}
+
+.smaller {
+  font-size: 0.85em;
+}
+
+.text--bold {
+  font-weight: 600;
+}
+
+.text--green {
+  color: #528c49;
+}
+
+.text--red {
+  color: #f12908;
+}
+
+.site {
+  min-width: 255px;
+  position: relative;
+}
+
+.text-container {
+  box-sizing: content-box;
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 0 3%;
+}
+
+.button-container {
+  padding: 1em 0;
+  text-align: center;
+  width: 100%;
+}
+
+.button {
+  background-color: #528c49;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.375em;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-top: 2.25em;
+  padding: 0.25em;
+  position: relative;
+  text-shadow: 2px 2px 6px #000;
+}
+.button:active .button__overlay {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.button .decoration {
+  max-width: none;
+  position: absolute;
+  width: 150%;
+}
+.button .top {
+  bottom: 100%;
+  left: -25%;
+}
+.button .bottom {
+  right: -25%;
+  top: 100%;
+}
+
+.button__overlay {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.iconed {
+  padding: 0.25em;
+}
+.iconed li {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 0.75em;
+}
+.iconed li img {
+  width: 1.75em;
+}
+.iconed li span {
+  padding-left: 0.5em;
+}
+
+.snow {
+  font-family: "Faux Snow", cursive;
+  font-size: 72px;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+
+header {
+  background-color: gray;
+  overflow: hidden;
+  position: relative;
+}
+header .background-image {
+  max-width: none;
+  position: absolute;
+}
+header .background-image.mobile {
+  bottom: 0;
+  height: 100%;
+  right: 50%;
+  top: 0;
+  -o-transform: translate(50%, 0);
+  -ms-transform: translate(50%, 0);
+  -moz-transform: translate(50%, 0);
+  -webkit-transform: translate(50%, 0);
+  transform: translate(50%, 0);
+}
+header .background-image.desktop {
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  -o-transform: translate(0, 50%);
+  -ms-transform: translate(0, 50%);
+  -moz-transform: translate(0, 50%);
+  -webkit-transform: translate(0, 50%);
+  transform: translate(0, 50%);
+  width: 100%;
+}
+header .floor {
+  background-color: rgba(255, 255, 255, 0.1);
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.25), #ebebeb);
+  /* Standard syntax (must be last) */
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+header .text-container {
+  padding: 0;
+}
+header .logo-container {
+  padding: 0.25em 0.25em 0;
+  position: relative;
+}
+header .logo {
+  max-width: 175px;
+  width: 75%;
+}
+header #banner-container {
+  position: relative;
+  width: 100%;
+}
+header #banner-container.mobile {
+  height: 437.5px;
+}
+header #banner-container.mobile .header-banner {
+  bottom: 0;
+  left: 50%;
+  height: 100%;
+  max-width: none;
+  position: absolute;
+  top: 0;
+  -o-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+header #banner-container.mobile .header-banner.mobile {
+  display: block;
+}
+header #banner-container.mobile .header-banner.desktop {
+  display: none;
+}
+header #banner-container.desktop {
+  height: auto;
+}
+header #banner-container.desktop .header-banner {
+  width: 100%;
+}
+header #banner-container.desktop .header-banner.mobile {
+  display: none;
+}
+header #banner-container.desktop .header-banner.desktop {
+  display: block;
+}
+header .text-box {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 47.5%;
+  -o-transform: translate(0, -47.5%);
+  -ms-transform: translate(0, -47.5%);
+  -moz-transform: translate(0, -47.5%);
+  -webkit-transform: translate(0, -47.5%);
+  transform: translate(0, -47.5%);
+  width: 100%;
+}
+
+main .tageline-container {
+  padding: 1.5em 3% 0;
+}
+main .divider {
+  display: block;
+  margin: 0 auto;
+}
+main .tageline-container__inner {
+  padding: 0.75em 0.5em;
+}
+main .featured-product-container {
+  display: inline-block;
+  margin: 1.5em 0;
+  vertical-align: top;
+  width: 100%;
+}
+main .featured-product-container__inner {
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.5), 0px 1px 3px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  max-width: 29.375em;
+  padding: 1em;
+}
+main .image-container {
+  margin: 0 auto;
+  max-width: 475px;
+  position: relative;
+}
+main .image-container .image-container__inner {
+  padding: 1px;
+  position: relative;
+  width: 80%;
+}
+main .image-container .image {
+  box-shadow: -5px -5px 10px #fff, 5px -5px 10px #fff, 5px 5px 10px #fff, -5px 5px 10px #fff;
+  display: block;
+  width: 100%;
+}
+main .image-container .badge {
+  left: 60%;
+  position: absolute;
+  right: 0;
+  top: 2.5%;
+  width: 40%;
+}
+main .image-container .badge.cup {
+  bottom: 3.5%;
+  top: auto;
+}
+main .description-contaier {
+  padding: 0 1.75%;
+  text-align: left;
+}
+
+footer {
+  color: #000;
+  font-size: 1.75em;
+  font-weight: 600;
+  padding-top: 1rem;
+}
+footer p {
+  margin-bottom: 1rem;
+}
+footer .countdown p {
+  margin-bottom: 0;
+}
+footer .countdown span {
+  background-color: #528c49;
+  border-radius: 0.5em;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 2px 1rem 5px;
+}
+
+@media screen and (min-width: 505px) {
+  h2, h3 {
+    font-size: 1.625em;
+  }
+
+  p, li {
+    font-size: 1.125em;
+  }
+
+  .button {
+    font-size: 1.5em;
+  }
+
+  header .logo-container {
+    padding: 0.5em 0.5em 0;
+  }
+
+  main .featured-product-container__inner {
+    padding: 1.25em;
+  }
+}
+@media screen and (min-width: 720px) {
+  main .featured-product-container {
+    width: 50%;
+  }
+  main .featured-product-container .left {
+    margin-right: 1em;
+  }
+  main .featured-product-container .right {
+    margin-left: 1em;
+  }
+}
+@media screen and (min-width: 850px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2, h3 {
+    font-size: 1.75em;
+  }
+
+  p, li {
+    font-size: 1.1875em;
+  }
+}
+@media screen and (min-width: 1095px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
